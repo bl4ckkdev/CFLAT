@@ -11,7 +11,7 @@ It is heavily inspired by C# and Swift too. It will also be used as a scripting 
 # Example code
 Some important things to note:
 - To use certain libraries, you need to use "need" and then specify them inside of the brackets.
-- "global" means public and "local means private.
+- "global" means public and "local" means private.
 - OnStart() and OnNewFrame() are special methods which run at the start and at every frame.
 - To make comments you use "**"
 
