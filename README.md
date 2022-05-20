@@ -1,5 +1,5 @@
 
-![cflatats](https://user-images.githubusercontent.com/72033313/169621673-f19a3a71-08bc-43fc-9737-8b22a4ad2651.png)
+![image](https://cdn.discordapp.com/attachments/910436116811878410/977341210228322324/textbutgray.png)
 
 # WARNING: This language is in very early stage.
 
@@ -53,7 +53,7 @@ global class Example
   {
      *set the date to new date and output it*
      Date = cf.time.date.ToString();
-     system.output($"Today's date is: {Date}");
+     cf.output($"Today's date is: {Date}");
   }
 }
 ```
