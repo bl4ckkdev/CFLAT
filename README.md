@@ -19,7 +19,7 @@ More info is coming soon, when I got more stuff done.
 
 ## Simple Calendar that prints the date (and refreshes it)
 
-```
+```swift
 namespace ExampleProgram;
 
 need {
@@ -30,14 +30,14 @@ need {
 global class Example
 {
    *output to console current date at the start*
-   public OnStart()
+   global OnStart()
    {
       global string(global, nullable) Date = cf.time.date.ToString();
       system.output("Today's date is: " + Date);
    }
   
   *check if the date has become different since the start*
-  public OnNewFrame()
+  global OnNewFrame()
   {
       *if it has then update the date*
       if (Date != cf.time.date.ToString())
@@ -49,7 +49,7 @@ global class Example
       
   }
   
-  public func UpdateDate()
+  global func UpdateDate()
   {
      *set the date to new date and output it*
      Date = cf.time.date.ToString();
@@ -60,7 +60,9 @@ global class Example
 
 ## Hello World
 
-```
+```swift
+namespace ExampleProgram;
+
 need {
   cf.system;
 }
