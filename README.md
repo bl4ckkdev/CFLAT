@@ -53,7 +53,7 @@ global class Example
   {
      *set the date to new date and output it*
      Date = cf.time.date.ToString();
-     cf.output($"Today's date is: {Date}");
+     system.output($"Today's date is: {Date}");
   }
 }
 ```
