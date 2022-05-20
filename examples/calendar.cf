@@ -1,0 +1,14 @@
+namespace ExampleProgram;
+
+need 
+{
+    cf.system;
+}
+
+global class HelloWorld
+{
+    global OnStart()
+    {
+        system.output("Hello World!");
+    }
+}

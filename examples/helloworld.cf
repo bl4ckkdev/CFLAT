@@ -1,0 +1,35 @@
+namespace ExampleProgram;
+
+need 
+{
+    cf.system;
+    cf.time;
+}
+
+global class Example
+{
+    *output to console current date at the start*
+    global OnStart()
+    {
+        global string(global, nullable) Date = cf.time.date.ToString();
+        system.output("Today's date is: " + Date);
+    }
+  
+    *check if the date has become different since the start*
+    global OnNewFrame()
+    {
+        *if it has then update the date*
+        if (Date != cf.time.date.ToString())
+        {
+            UpdateDate();
+            return;
+        }   
+    }
+
+    global func UpdateDate()
+    {
+        *set the date to new date and output it*
+        Date = cf.time.date.ToString();
+        system.output($"Today's date is: {Date}");
+    }
+}
