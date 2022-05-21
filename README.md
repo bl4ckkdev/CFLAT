@@ -30,14 +30,14 @@ need {
 global class Example
 {
    *output to console current date at the start*
-   global OnStart()
+   global OnStart Start()
    {
       global string(global, nullable) Date = cf.time.date.ToString();
       system.output("Today's date is: " + Date);
    }
   
   *check if the date has become different since the start*
-  global OnNewFrame()
+  global OnNewFrame Update()
   {
       *if it has then update the date*
       if (Date != cf.time.date.ToString())
@@ -69,7 +69,7 @@ need {
 
 global class HelloWorld
 {
-  global OnStart()
+  global OnStart Start()
   {
     system.output("Hello World!");
   }
