@@ -3,7 +3,7 @@
 
 # WARNING: This language is in very early stage.
 
-CFLAT is a simple programming language, it is a hobby of mine and my first interaction with C++.
+CFLAT is a simple programming language, it is a hobby of mine and was made with C#.
 The language is not ready to be released yet, which means that I can only give examples of what it will be like.
 
 It is heavily inspired by C# and Swift too. It will also be used as a scripting system for my game "Rigid".
