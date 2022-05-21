@@ -6,7 +6,7 @@
 CFLAT is a simple programming language, it is a hobby of mine and was made with C#.
 The language is not ready to be released yet, which means that I can only give examples of what it will be like.
 
-It is heavily inspired by C# and Swift too. It will also be used as a scripting system for my game "Rigid".
+It is heavily inspired by C and Swift too. It will also be used as a scripting system for my game "Rigid".
 
 # Example code
 Some important things to note:
