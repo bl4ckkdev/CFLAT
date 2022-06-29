@@ -10,7 +10,7 @@ It is heavily inspired by C# and Swift too. It will also be used as a scripting 
 
 # Example code
 Some important things to note:
-- To use certain libraries, you need to use "need" and then specify them inside of the brackets.
+- To use certain libraries, you need to use "open" and then specify them.
 - "global" means public and "local" means private.
 - OnStart() and OnNewFrame() are special methods which run at the start and at every frame.
 - To make comments you use "**"
@@ -22,22 +22,20 @@ More info is coming soon, when I got more stuff done.
 ```swift
 namespace ExampleProgram;
 
-need {
-   cf.system;
-   cf.time;
-}
+open system;
+open cf.time;
 
 global class Example
 {
    *output to console current date at the start*
-   global OnStart Start()
+   global OnStart()
    {
-      global string(global, nullable) Date = cf.time.date.ToString();
+      global nullable string Date = cf.time.date.ToString();
       system.output("Today's date is: " + Date);
    }
   
   *check if the date has become different since the start*
-  global OnNewFrame Update()
+  global OnNewFrame()
   {
       *if it has then update the date*
       if (Date != cf.time.date.ToString())
@@ -63,15 +61,13 @@ global class Example
 ```swift
 namespace ExampleProgram;
 
-need {
-  cf.system;
-}
+open system;
 
 global class HelloWorld
 {
-  global OnStart Start()
+  local OnStart()
   {
-    system.output("Hello World!");
+      system.output("Hello World!");
   }
 }
 ```
